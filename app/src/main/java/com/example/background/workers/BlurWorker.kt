@@ -38,7 +38,6 @@ class BlurWorker(ctx: Context, params: WorkerParameters) : Worker(ctx, params) {
         } catch (e: Throwable) {
             Log.e(TAG, "Error applying blur")
             e.printStackTrace()
-
             Result.failure()
         }
     }
